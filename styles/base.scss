@@ -19,3 +19,63 @@ $text-color: #2C2C2C;
 @import "global";
 @import "intro";
 @import "animation";
+
+@media (max-width: 1180px) {
+    html {
+        font-size: 53%;
+    }
+    .splach {
+        display: none;
+    }
+    svg {
+        width: 80%;
+    }
+    .main-head {
+        width: 100%;
+        background: $gradient;
+    }
+    nav {
+        width: 100%;
+    }
+    .logo {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 754px) {
+    html {
+        font-size: 45%;
+    }
+    svg {
+        height: 60%;
+        // max-width: 90%;
+    }
+    .main-head {
+        width: 100%;
+    }
+    nav {
+        .logo {
+            @include flex(center, center, column);
+            flex: 1 1 20rem;
+            margin-top: 2rem;
+        }
+        ul {
+            flex: 1 1 60rem;
+            margin: 2rem 0rem;
+        }
+        
+    }
+    .intro-text {
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .intro-image {
+        text-align: center;
+    }
+    .intro-social {
+        @include flex(center, center ,row);
+        a {
+            margin: 2rem;
+        }
+    }
+}
