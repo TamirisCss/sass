@@ -9,19 +9,21 @@
     <title>Sass</title>
 </head>
 <body>
-    <header class="main-head">
-        <nav>
-            <div class="logo">
-                <img src="../icons/code.svg" alt="icon-logo">
-                <h1>Dev Tami</h1>
-            </div>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../projects/">Projects</a></li>
-                <li><a class="active" href="./index.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="bg">
+        <header class="main-head">
+            <nav>
+                <div class="logo">
+                    <img src="../icons/code.svg" alt="icon-logo">
+                    <h1>Dev Tami</h1>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/">Projects</a></li>
+                    <li><a class="active" href="./index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <section class="form-section">
         <form>
             <label for="name">Name</label>
@@ -29,7 +31,7 @@
             <label for="email">Email</label>
             <input id="email" type="email" name="email" required>
             <label for="message">Message</label>
-            <textarea id="message" name="message"  cols="30" rows="10"></textarea>
+            <textarea id="message" name="message"  cols="30" rows="5"></textarea>
             <button type="submit">Submit</button>
         </form>
     </section>
