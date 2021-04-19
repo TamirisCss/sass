@@ -1,0 +1,42 @@
+/*ANIMATIONS*/
+#plant-left {
+    animation: plant 1.5s ease infinite alternate;
+}
+
+@keyframes plant {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-10%);
+    }
+}
+
+#head {
+    animation: head 1.5s ease infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes head {
+    from {
+        transform: rotateZ(-2deg);
+    }
+    to {
+        transform: rotateZ(2deg);
+    }
+}
+
+#clock-arrow {
+    animation: clock 3.5s infinite linear;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+@keyframes clock {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
