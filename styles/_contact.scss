@@ -1,0 +1,5 @@
+.form-section {
+    min-height: 90vh;
+    @include flex(center, center, row);
+    margin-top: 3rem;
+}
